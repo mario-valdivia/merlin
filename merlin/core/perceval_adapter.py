@@ -688,4 +688,5 @@ class PercevalAdapter:
             experiment._anon_herald_num = snapshot.anon_herald_num
 
         experiment._postselect = copy.copy(snapshot.postselection)
-        experiment._circuit_changed()
+        if hasattr(experiment, "_circuit_changed"):
+            experiment._circuit_changed()

@@ -103,7 +103,7 @@ class TestExtractToken:
         config = MagicMock()
         config.get_token.side_effect = RuntimeError("config broken")
 
-        with patch("perceval.runtime.RemoteConfig", return_value=config):
+        with patch("perceval.RemoteConfig", return_value=config):
             assert PercevalAdapter.extract_token(make_rp(SimpleNamespace())) is None
 
 
