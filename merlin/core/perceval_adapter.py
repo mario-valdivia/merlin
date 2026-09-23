@@ -24,7 +24,7 @@ from typing import Any
 
 import perceval as pcvl
 from perceval.algorithm import Sampler
-from perceval import AProcessor, Processor, RemoteJob, RemoteProcessor, ISession
+from perceval import AProcessor, ISession, Processor, RemoteJob, RemoteProcessor
 
 logger = logging.getLogger(__name__)
 

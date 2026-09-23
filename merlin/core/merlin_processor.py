@@ -12,7 +12,7 @@ import numpy as np
 import perceval as pcvl
 import torch
 import torch.nn as nn
-from perceval import AProcessor, RemoteJob, RemoteProcessor, ISession
+from perceval import AProcessor, ISession, RemoteJob, RemoteProcessor
 from torch.futures import Future
 
 from ..algorithms.module import MerlinModule
