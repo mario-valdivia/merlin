@@ -157,7 +157,7 @@ class PercevalAdapter:
 
         # Last resort: check the global config
         try:
-            from perceval.runtime import RemoteConfig
+            from perceval import RemoteConfig
 
             global_token = (RemoteConfig().get_token() or "").strip()
             if global_token:
