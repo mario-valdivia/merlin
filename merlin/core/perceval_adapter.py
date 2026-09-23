@@ -23,8 +23,8 @@ from dataclasses import dataclass
 from typing import Any
 
 import perceval as pcvl
-from perceval.algorithm import Sampler
 from perceval import AProcessor, ISession, Processor, RemoteJob, RemoteProcessor
+from perceval.algorithm import Sampler
 
 logger = logging.getLogger(__name__)
 
